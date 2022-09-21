@@ -15,9 +15,9 @@ body {
 main {
     width: 800px;
     height: 400px;
-    margin: auto auto;
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 .left-container {
     width: 50%;

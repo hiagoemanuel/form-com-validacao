@@ -1,0 +1,45 @@
+@media (max-width: 800px) {
+    main {
+        transform: scale(1);
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px
+    }
+    .left-container {
+        width: auto;
+        height: auto;
+    }
+    .left-container .information {
+        text-align: center;
+    }
+    .right-container {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    main {
+        transform: scale(1);
+    }
+}
+
+@media (min-width:1024px) {
+    main {
+        transform: scale(1.3);
+    }
+}
+
+@media (min-width: 1360px) {
+    main {
+        transform: scale(1.7);
+    }
+}
+
+@media (min-width: 1600px) {
+    main {
+        transform: scale(2);
+    }
+}
