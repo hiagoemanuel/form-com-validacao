@@ -24,7 +24,17 @@
         height: auto;
     }
 }
-
+@media (max-width: 300px) {
+    main {
+        gap: 5px;
+    }
+    .left-container .information h1 {
+        font-size: 1.5rem;
+    }
+    .left-container .information p {
+        font-size: 1rem;
+    }
+}
 @media (min-width: 800px) {
     main {
         transform: scale(1);

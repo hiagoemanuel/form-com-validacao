@@ -24,16 +24,29 @@
             </div>
         </div>
         <div class="right-container">
-            <form action="/" method="post" class="form-container">
-                <input type="text" name="name" id="name" placeholder="Nome completo *">
-                <input type="email" name="email" id="email" placeholder="Email *">
-                <input type="tel" name="phone" id="phone" placeholder="Telefone *">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+            <form class="form-container" id="form">
+                <div class="form-data">
+                    <input class="validation" type="text" placeholder="Nome completo *">
+                    <small>campo obrigatório</small>
+                </div>
+                <div class="form-data">
+                    <input class="validation" type="email" placeholder="Email *">
+                    <small>campo obrigatório</small>
+                </div>
+                <div class="form-data">
+                    <input class="validation" type="tel" placeholder="Telefone *">
+                    <small>campo obrigatório</small>
+                </div>
+                <div class="form-data">
+                    <textarea class="validation" name="message" class="message" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+                    <small>campo obrigatório</small>
+                </div>
                 <span>*campos origatórios</span>
                 <input type="submit" value="Enviar">
             </form>
         </div>
     </main>
+    <script src="./src/assets/form.js"></script>
 </body>
 
 </html>

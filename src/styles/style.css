@@ -53,7 +53,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 6px;
     background-color: #ffffff;
 }
 .right-container .form-container input, .form-container textarea{
@@ -71,7 +71,6 @@ main {
     height: 100px;
 }
 .right-container .form-container span {
-    margin-top: -8px;
     margin-bottom: 5px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -84,4 +83,22 @@ main {
     cursor: pointer;
     color: #ffffff;
     background-color: #3ccc87;
+}
+/* VALIDATION */
+.right-container .form-data small {
+    visibility: hidden;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #F52E2E;
+}
+.right-container .form-data.accepted input, .form-data.accepted textarea {
+    border: 1px solid #00C22B;
+    transition: 0.3s ease;
+}
+.right-container .form-data.refused input, .form-data.refused textarea{
+    border: 1px solid #F52E2E;
+    transition: 0.3s ease-in;
+}
+.right-container .form-data.refused small {
+    visibility: visible;
 }
